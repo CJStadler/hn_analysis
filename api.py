@@ -3,7 +3,7 @@ from firebase import firebase
 api = firebase.FirebaseApplication('https://hacker-news.firebaseio.com/v0/', None)
 
 def get_topstories():
-    return api.get('topstories', None)[0:2]
+    return api.get('topstories', None)
 
 def get_item(id):
     return api.get("item", id)
